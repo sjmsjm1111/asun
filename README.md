@@ -1,2 +1,524 @@
 # asun
 html made by asun - poo qoo ok
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>푸꾸옥 3박 5일 3세대 가족 여행 가이드</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            background-color: #f8fafc;
+        }
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</head>
+<body class="text-slate-800 pb-16">
+
+    <!-- Hero Header -->
+    <header class="relative bg-slate-900 text-white min-h-[380px] flex items-center justify-center overflow-hidden">
+        <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1600&q=80" 
+             alt="Phu Quoc Beach" 
+             class="absolute inset-0 w-full h-full object-cover opacity-50 scale-105 transition-transform duration-1000">
+        <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/40 to-transparent"></div>
+        
+        <div class="relative z-10 max-w-4xl mx-auto px-6 text-center pt-8 pb-6">
+            <div class="inline-flex items-center gap-2 px-3 py-1.5 bg-amber-500/90 text-amber-950 font-semibold text-xs rounded-full mb-4 shadow-lg backdrop-blur-sm">
+                <i class="fa-solid fa-sun"></i> 2월 건기 맞춤 힐링 일정
+            </div>
+            <h1 class="text-3xl md:text-5xl font-extrabold tracking-tight mb-3 text-white drop-shadow-md">
+                푸꾸옥 3세대 가족 여행
+            </h1>
+            <p class="text-emerald-300 font-medium text-base md:text-lg mb-6">
+                아기 · 할머니 · 청소년 · 부부가 함께하는 3박 5일 안심 동선
+            </p>
+            
+            <!-- Quick Info Badges -->
+            <div class="flex flex-wrap justify-center gap-2 text-xs md:text-sm font-medium">
+                <span class="px-3 py-1.5 bg-white/10 backdrop-blur-md rounded-lg border border-white/20 flex items-center gap-1.5">
+                    <i class="fa-regular fa-clock text-amber-400"></i> 3박 5일 (2월 중순)
+                </span>
+                <span class="px-3 py-1.5 bg-white/10 backdrop-blur-md rounded-lg border border-white/20 flex items-center gap-1.5">
+                    <i class="fa-solid fa-users text-teal-400"></i> 3세대 대가족 (5인 이상)
+                </span>
+                <span class="px-3 py-1.5 bg-white/10 backdrop-blur-md rounded-lg border border-white/20 flex items-center gap-1.5">
+                    <i class="fa-solid fa-van-shuttle text-indigo-400"></i> 호핑 X / 단독 차량 추천
+                </span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <main class="max-w-4xl mx-auto px-4 md:px-6 -mt-6 relative z-20">
+
+        <!-- Family Member Care Points -->
+        <section class="bg-white rounded-2xl p-5 md:p-6 shadow-md border border-slate-100 mb-8">
+            <h2 class="text-lg font-bold text-slate-900 mb-4 flex items-center gap-2">
+                <i class="fa-solid fa-heart-pulse text-rose-500"></i> 3세대 만족을 위한 맞춤 핵심 체크
+            </h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-3 text-sm">
+                <div class="bg-amber-50 p-3.5 rounded-xl border border-amber-100">
+                    <span class="font-bold text-amber-900 block mb-1">👶 아기 (영유아)</span>
+                    <p class="text-amber-800 text-xs leading-relaxed">에어컨 실내 휴식처 확보, 유모차 이동 가능 동선, 덮개용 얇은 블랭킷 필수</p>
+                </div>
+                <div class="bg-emerald-50 p-3.5 rounded-xl border border-emerald-100">
+                    <span class="font-bold text-emerald-900 block mb-1">👵 할머니 (어르신)</span>
+                    <p class="text-emerald-800 text-xs leading-relaxed">사파리 VIP 버기 차량 이용으로 도보 최소화, 계단 없는 평지 위주 탐방</p>
+                </div>
+                <div class="bg-indigo-50 p-3.5 rounded-xl border border-indigo-100">
+                    <span class="font-bold text-indigo-900 block mb-1">🧑‍🦱 청소년</span>
+                    <p class="text-indigo-800 text-xs leading-relaxed">화려한 테마파크, 케이블카 전경, 오션뷰 카페 & 화려한 야간 불꽃쇼</p>
+                </div>
+                <div class="bg-teal-50 p-3.5 rounded-xl border border-teal-100">
+                    <span class="font-bold text-teal-900 block mb-1">👫 부부 (보호자)</span>
+                    <p class="text-teal-800 text-xs leading-relaxed">여유로운 리조트 수영, 1일 1마사지, 편안한 단독 렌트카 이동</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Day Navigation Tabs -->
+        <div class="flex gap-2 mb-6 overflow-x-auto pb-2 hide-scrollbar">
+            <button onclick="filterDay('all')" id="btn-all" class="tab-btn px-4 py-2.5 rounded-xl font-bold text-sm whitespace-nowrap bg-teal-600 text-white shadow-md">
+                전체 일정 보기
+            </button>
+            <button onclick="filterDay('day1')" id="btn-day1" class="tab-btn px-4 py-2.5 rounded-xl font-semibold text-sm whitespace-nowrap bg-white text-slate-600 hover:bg-slate-100 border border-slate-200">
+                1일차 (입국/야시장)
+            </button>
+            <button onclick="filterDay('day2')" id="btn-day2" class="tab-btn px-4 py-2.5 rounded-xl font-semibold text-sm whitespace-nowrap bg-white text-slate-600 hover:bg-slate-100 border border-slate-200">
+                2일차 (북부/사파리)
+            </button>
+            <button onclick="filterDay('day3')" id="btn-day3" class="tab-btn px-4 py-2.5 rounded-xl font-semibold text-sm whitespace-nowrap bg-white text-slate-600 hover:bg-slate-100 border border-slate-200">
+                3일차 (남부/케이블카)
+            </button>
+            <button onclick="filterDay('day4')" id="btn-day4" class="tab-btn px-4 py-2.5 rounded-xl font-semibold text-sm whitespace-nowrap bg-white text-slate-600 hover:bg-slate-100 border border-slate-200">
+                4-5일차 (쇼핑/귀국)
+            </button>
+        </div>
+
+        <!-- Timeline Cards Container -->
+        <div class="space-y-8">
+
+            <!-- Day 1 -->
+            <div id="day1" class="day-card bg-white rounded-2xl shadow-sm border border-slate-200/80 overflow-hidden">
+                <div class="relative h-48 md:h-56 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=1000&q=80" 
+                         alt="Duong Dong Night Market" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-slate-950/20 to-transparent"></div>
+                    <div class="absolute bottom-4 left-5 right-5 text-white">
+                        <span class="px-2.5 py-1 bg-amber-500 text-slate-950 font-bold text-xs rounded-md uppercase tracking-wider mb-1 inline-block">1일차</span>
+                        <h3 class="text-xl md:text-2xl font-bold">푸꾸옥 입국, 휴식 & 즈엉동 야시장</h3>
+                        <p class="text-xs text-slate-300 mt-1"><i class="fa-solid fa-location-dot text-amber-400"></i> 중부 / 즈엉동 지역</p>
+                    </div>
+                </div>
+
+                <div class="p-5 md:p-6 space-y-6">
+                    <!-- Morning -->
+                    <div class="flex gap-4">
+                        <div class="flex flex-col items-center">
+                            <span class="w-9 h-9 bg-amber-100 text-amber-700 rounded-full flex items-center justify-center font-bold text-sm shrink-0">
+                                <i class="fa-solid fa-plane-arrival"></i>
+                            </span>
+                            <div class="w-0.5 h-full bg-slate-200 my-1"></div>
+                        </div>
+                        <div>
+                            <span class="text-xs font-semibold text-amber-600">오전</span>
+                            <h4 class="text-base font-bold text-slate-800">공항 도착 및 모닝 스파 & 조식</h4>
+                            <p class="text-xs text-slate-600 mt-1 leading-relaxed">
+                                새벽/아침 도착 후 예약된 스파 업체의 픽업 차량으로 이동. 짐 보관 후 모닝 마사지로 새벽 비행의 피로를 풀고 쌀국수로 가벼운 아침 식사를 진행합니다.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Afternoon -->
+                    <div class="flex gap-4">
+                        <div class="flex flex-col items-center">
+                            <span class="w-9 h-9 bg-teal-100 text-teal-700 rounded-full flex items-center justify-center font-bold text-sm shrink-0">
+                                <i class="fa-solid fa-hotel"></i>
+                            </span>
+                            <div class="w-0.5 h-full bg-slate-200 my-1"></div>
+                        </div>
+                        <div>
+                            <span class="text-xs font-semibold text-teal-600">오후</span>
+                            <h4 class="text-base font-bold text-slate-800">리조트 얼리 얼리체크인 / 휴식 & 수영</h4>
+                            <p class="text-xs text-slate-600 mt-1 leading-relaxed">
+                                리조트에 체크인 후 할머니와 아기는 안락한 객실에서 낮잠 및 오붓한 휴식을 취하고, 청소년과 부부는 리조트 메인 풀장에서 수영을 즐깁니다.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Evening -->
+                    <div class="flex gap-4">
+                        <div class="flex flex-col items-center">
+                            <span class="w-9 h-9 bg-indigo-100 text-indigo-700 rounded-full flex items-center justify-center font-bold text-sm shrink-0">
+                                <i class="fa-solid fa-store"></i>
+                            </span>
+                        </div>
+                        <div>
+                            <span class="text-xs font-semibold text-indigo-600">저녁</span>
+                            <h4 class="text-base font-bold text-slate-800">즈엉동 야시장 탐방 & 현지 식사</h4>
+                            <p class="text-xs text-slate-600 mt-1 leading-relaxed">
+                                푸꾸옥 최대 야시장 탐방. 길거리 시식용 슈슈땅콩, 과일 주스, 싱싱한 해산물 구이 등을 즐기며 밤거리를 구경합니다. (경사가 없어 유모차 이동 용이)
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Tip Box -->
+                    <div class="bg-slate-50 border-l-4 border-amber-500 p-3.5 rounded-r-xl text-xs text-slate-700">
+                        <span class="font-bold text-amber-800 block mb-0.5"><i class="fa-solid fa-lightbulb"></i> 1일차 TIP</span>
+                        야시장은 사람이 몰릴 수 있으므로 아기용 유모차에 반사 띠나 손목 스트랩을 챙기시면 유용합니다. 땅콩 가게는 무료 시식을 많이 주므로 취향에 맞는 맛을 먼저 찾아보세요!
+                    </div>
+                </div>
+            </div>
+
+            <!-- Day 2 -->
+            <div id="day2" class="day-card bg-white rounded-2xl shadow-sm border border-slate-200/80 overflow-hidden">
+                <div class="relative h-48 md:h-56 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1534567153574-2b12153a87f0?auto=format&fit=crop&w=1000&q=80" 
+                         alt="Vinpearl Safari Giraffe" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-slate-950/20 to-transparent"></div>
+                    <div class="absolute bottom-4 left-5 right-5 text-white">
+                        <span class="px-2.5 py-1 bg-teal-500 text-white font-bold text-xs rounded-md uppercase tracking-wider mb-1 inline-block">2일차</span>
+                        <h3 class="text-xl md:text-2xl font-bold">빈펄 사파리, 아쿠아리움 & 그랜드월드</h3>
+                        <p class="text-xs text-slate-300 mt-1"><i class="fa-solid fa-location-dot text-amber-400"></i> 북부 / 빈펄 단지</p>
+                    </div>
+                </div>
+
+                <div class="p-5 md:p-6 space-y-6">
+                    <!-- Morning -->
+                    <div class="flex gap-4">
+                        <div class="flex flex-col items-center">
+                            <span class="w-9 h-9 bg-amber-100 text-amber-700 rounded-full flex items-center justify-center font-bold text-sm shrink-0">
+                                <i class="fa-solid fa-hippo"></i>
+                            </span>
+                            <div class="w-0.5 h-full bg-slate-200 my-1"></div>
+                        </div>
+                        <div>
+                            <span class="text-xs font-semibold text-amber-600">오전 (09:00~)</span>
+                            <h4 class="text-base font-bold text-slate-800">빈펄 사파리 (VIP 버기 투어 이용)</h4>
+                            <p class="text-xs text-slate-600 mt-1 leading-relaxed">
+                                오픈 직후 입장하여 **전용 VIP 버기(가이드 탑승 전동차)**를 이용합니다. 어르신과 아기가 걷지 않고 편안하게 사파리를 둘러볼 수 있으며 줄 서지 않고 빠른 관람이 가능합니다.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Lunch -->
+                    <div class="flex gap-4">
+                        <div class="flex flex-col items-center">
+                            <span class="w-9 h-9 bg-orange-100 text-orange-700 rounded-full flex items-center justify-center font-bold text-sm shrink-0">
+                                <i class="fa-solid fa-utensils"></i>
+                            </span>
+                            <div class="w-0.5 h-full bg-slate-200 my-1"></div>
+                        </div>
+                        <div>
+                            <span class="text-xs font-semibold text-orange-600">점심</span>
+                            <h4 class="text-base font-bold text-slate-800">기린 레스토랑 식사 & 먹이주기 체험</h4>
+                            <p class="text-xs text-slate-600 mt-1 leading-relaxed">
+                                기린을 바로 옆에서 바라보며 점심 식사를 즐깁니다. 당근 먹이 스틱을 구매해 아기와 청소년이 직접 기린에게 먹이를 주는 잊지 못할 경험을 선사합니다.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Afternoon -->
+                    <div class="flex gap-4">
+                        <div class="flex flex-col items-center">
+                            <span class="w-9 h-9 bg-blue-100 text-blue-700 rounded-full flex items-center justify-center font-bold text-sm shrink-0">
+                                <i class="fa-solid fa-fish"></i>
+                            </span>
+                            <div class="w-0.5 h-full bg-slate-200 my-1"></div>
+                        </div>
+                        <div>
+                            <span class="text-xs font-semibold text-blue-600">오후</span>
+                            <h4 class="text-base font-bold text-slate-800">빈원더스 씨쉘 아쿠아리움 (실내 에어컨)</h4>
+                            <p class="text-xs text-slate-600 mt-1 leading-relaxed">
+                                낮 최고 기온 타임에는 시원한 초대형 거북이 모양의 실내 아쿠아리움으로 이동합니다. 인어공주 쇼와 해양 생물들을 감상하며 쾌적하게 더위를 피합니다.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Evening -->
+                    <div class="flex gap-4">
+                        <div class="flex flex-col items-center">
+                            <span class="w-9 h-9 bg-purple-100 text-purple-700 rounded-full flex items-center justify-center font-bold text-sm shrink-0">
+                                <i class="fa-solid fa-masks-theater"></i>
+                            </span>
+                        </div>
+                        <div>
+                            <span class="text-xs font-semibold text-purple-600">저녁</span>
+                            <h4 class="text-base font-bold text-slate-800">그랜드월드 야경 & 무료 분수쇼 관람</h4>
+                            <p class="text-xs text-slate-600 mt-1 leading-relaxed">
+                                '잠들지 않는 도시' 그랜드월드로 이동하여 이탈리아 베네치아 풍 운하 거리를 산책하고 야경을 즐기며, 대형 분수 레이저 쇼를 관람합니다.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Tip Box -->
+                    <div class="bg-slate-50 border-l-4 border-teal-500 p-3.5 rounded-r-xl text-xs text-slate-700">
+                        <span class="font-bold text-teal-800 block mb-0.5"><i class="fa-solid fa-star"></i> 필수 예약 팁</span>
+                        사파리 **VIP 버기 서비스**는 현장 선착순 또는 사전 예약이 필수입니다. 대가족 전용 차 한 대를 통째로 빌리면 60분간 프라이빗하게 동물원 핵심 구역을 모두 돌 수 있습니다.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Day 3 -->
+            <div id="day3" class="day-card bg-white rounded-2xl shadow-sm border border-slate-200/80 overflow-hidden">
+                <div class="relative h-48 md:h-56 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1519046904884-53103b34b206?auto=format&fit=crop&w=1000&q=80" 
+                         alt="Phu Quoc Sunset & Cable Car" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-slate-950/20 to-transparent"></div>
+                    <div class="absolute bottom-4 left-5 right-5 text-white">
+                        <span class="px-2.5 py-1 bg-indigo-500 text-white font-bold text-xs rounded-md uppercase tracking-wider mb-1 inline-block">3일차</span>
+                        <h3 class="text-xl md:text-2xl font-bold">혼똔섬 케이블카, 선셋타운 & 키스 오브 더 씨 Show</h3>
+                        <p class="text-xs text-slate-300 mt-1"><i class="fa-solid fa-location-dot text-amber-400"></i> 남부 / 선셋타운 & 혼똔섬</p>
+                    </div>
+                </div>
+
+                <div class="p-5 md:p-6 space-y-6">
+                    <!-- Morning -->
+                    <div class="flex gap-4">
+                        <div class="flex flex-col items-center">
+                            <span class="w-9 h-9 bg-sky-100 text-sky-700 rounded-full flex items-center justify-center font-bold text-sm shrink-0">
+                                <i class="fa-solid fa-cable-car"></i>
+                            </span>
+                            <div class="w-0.5 h-full bg-slate-200 my-1"></div>
+                        </div>
+                        <div>
+                            <span class="text-xs font-semibold text-sky-600">오전</span>
+                            <h4 class="text-base font-bold text-slate-800">세계 최장 해상 케이블카 탑승 (혼똔섬)</h4>
+                            <p class="text-xs text-slate-600 mt-1 leading-relaxed">
+                                바다 위 8km를 가로지르는 최장 케이블카에 탑승합니다. 에메랄드빛 에메랄드 바다와 알록달록한 어선 풍경이 펼쳐져 어르신과 청소년 모두 크게 만족하는 코스입니다.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Afternoon -->
+                    <div class="flex gap-4">
+                        <div class="flex flex-col items-center">
+                            <span class="w-9 h-9 bg-amber-100 text-amber-700 rounded-full flex items-center justify-center font-bold text-sm shrink-0">
+                                <i class="fa-solid fa-camera"></i>
+                            </span>
+                            <div class="w-0.5 h-full bg-slate-200 my-1"></div>
+                        </div>
+                        <div>
+                            <span class="text-xs font-semibold text-amber-600">오후</span>
+                            <h4 class="text-base font-bold text-slate-800">선셋타운 산책 & 키스브릿지 오션뷰 카페</h4>
+                            <p class="text-xs text-slate-600 mt-1 leading-relaxed">
+                                유럽풍으로 정교하게 꾸며진 선셋타운을 산책하고, 키스브릿지가 보이는 에어컨 오션뷰 카페에서 2월 푸꾸옥의 환상적인 일몰을 배경으로 대가족 기념 사진을 촬영합니다.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Evening -->
+                    <div class="flex gap-4">
+                        <div class="flex flex-col items-center">
+                            <span class="w-9 h-9 bg-rose-100 text-rose-700 rounded-full flex items-center justify-center font-bold text-sm shrink-0">
+                                <i class="fa-solid fa-fireworks"></i>
+                            </span>
+                        </div>
+                        <div>
+                            <span class="text-xs font-semibold text-rose-600">저녁</span>
+                            <h4 class="text-base font-bold text-slate-800">키스 오브 더 씨(Kiss of the Sea) 공연 & 불꽃놀이</h4>
+                            <p class="text-xs text-slate-600 mt-1 leading-relaxed">
+                                워터 멀티미디어 쇼 관람 후 밤하늘을 수놓는 화려한 불꽃놀이 쇼를 감상합니다. 남부 맛집에서 씨푸드 저녁 식사 후 숙소로 이동합니다.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Tip Box -->
+                    <div class="bg-slate-50 border-l-4 border-indigo-500 p-3.5 rounded-r-xl text-xs text-slate-700">
+                        <span class="font-bold text-indigo-800 block mb-0.5"><i class="fa-solid fa-circle-info"></i> 이용 참고</span>
+                        혼똔섬 내 워터파크는 어린 아기와 어르신에게 다소 지칠 수 있으므로, 케이블카 왕복 탑승 및 섬 내부 테마 정원 산책 위주로 가볍게 둘러보시는 것을 추천합니다.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Day 4 & 5 -->
+            <div id="day4" class="day-card bg-white rounded-2xl shadow-sm border border-slate-200/80 overflow-hidden">
+                <div class="relative h-48 md:h-56 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1610832958506-aa56368176cf?auto=format&fit=crop&w=1000&q=80" 
+                         alt="Tropical Fruit & Shopping" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-slate-950/20 to-transparent"></div>
+                    <div class="absolute bottom-4 left-5 right-5 text-white">
+                        <span class="px-2.5 py-1 bg-emerald-500 text-white font-bold text-xs rounded-md uppercase tracking-wider mb-1 inline-block">4 ~ 5일차</span>
+                        <h3 class="text-xl md:text-2xl font-bold">기념품 쇼핑, 힐링 마사지 & 공항 귀국</h3>
+                        <p class="text-xs text-slate-300 mt-1"><i class="fa-solid fa-location-dot text-amber-400"></i> 중부 / 킹콩마트 & 공항</p>
+                    </div>
+                </div>
+
+                <div class="p-5 md:p-6 space-y-6">
+                    <!-- Morning -->
+                    <div class="flex gap-4">
+                        <div class="flex flex-col items-center">
+                            <span class="w-9 h-9 bg-emerald-100 text-emerald-700 rounded-full flex items-center justify-center font-bold text-sm shrink-0">
+                                <i class="fa-solid fa-mug-hot"></i>
+                            </span>
+                            <div class="w-0.5 h-full bg-slate-200 my-1"></div>
+                        </div>
+                        <div>
+                            <span class="text-xs font-semibold text-emerald-600">오전</span>
+                            <h4 class="text-base font-bold text-slate-800">리조트 여유로운 여정 정리 & 레이트 체크아웃</h4>
+                            <p class="text-xs text-slate-600 mt-1 leading-relaxed">
+                                조식을 넉넉하게 즐긴 뒤 짐을 정돈합니다. (필요 시 레이트 체크아웃 요청 또는 짐 보관 서비스 활용)
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Afternoon -->
+                    <div class="flex gap-4">
+                        <div class="flex flex-col items-center">
+                            <span class="w-9 h-9 bg-amber-100 text-amber-700 rounded-full flex items-center justify-center font-bold text-sm shrink-0">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </span>
+                            <div class="w-0.5 h-full bg-slate-200 my-1"></div>
+                        </div>
+                        <div>
+                            <span class="text-xs font-semibold text-amber-600">오후</span>
+                            <h4 class="text-base font-bold text-slate-800">킹콩마트(King Kong Mart) 쇼핑</h4>
+                            <p class="text-xs text-slate-600 mt-1 leading-relaxed">
+                                푸꾸옥 특산품인 통후추, 베트남 커피, 마카다미아, 건과일, 진주 제품 등을 한 번에 구입할 수 있는 대형 마트에서 선물 쇼핑을 즐깁니다.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Evening / Night -->
+                    <div class="flex gap-4">
+                        <div class="flex flex-col items-center">
+                            <span class="w-9 h-9 bg-purple-100 text-purple-700 rounded-full flex items-center justify-center font-bold text-sm shrink-0">
+                                <i class="fa-solid fa-spa"></i>
+                            </span>
+                        </div>
+                        <div>
+                            <span class="text-xs font-semibold text-purple-600">저녁 ~ 심야</span>
+                            <h4 class="text-base font-bold text-slate-800">굿바이 스파(샤워 포함) & 공항 이동</h4>
+                            <p class="text-xs text-slate-600 mt-1 leading-relaxed">
+                                저녁 식사 후 공항 근처 샌딩 포함 스파에서 마사지를 받고 깨끗하게 샤워한 뒤 쾌적한 상태로 공항으로 이동하여 심야 비행기 탑승 (5일차 이른 아침 한국 도착).
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Practical Travel Guide Section -->
+        <section class="mt-10 bg-slate-900 text-white rounded-2xl p-6 md:p-8 shadow-xl">
+            <h2 class="text-xl font-bold mb-6 text-amber-400 flex items-center gap-2">
+                <i class="fa-solid fa-compass"></i> 대가족 안심 여행 핵심 가이드
+            </h2>
+
+            <div class="grid md:grid-cols-3 gap-6">
+                <!-- Vehicle -->
+                <div class="bg-slate-800/80 p-5 rounded-xl border border-slate-700">
+                    <div class="w-10 h-10 bg-amber-500/20 text-amber-400 rounded-lg flex items-center justify-center font-bold mb-3 text-lg">
+                        <i class="fa-solid fa-car-side"></i>
+                    </div>
+                    <h3 class="font-bold text-base mb-2">단독 렌트카 (기사 포함)</h3>
+                    <p class="text-xs text-slate-300 leading-relaxed">
+                        5인 이상 대가족 + 유모차 + 짐 이동에는 일반 택시보다 12시간 단독 렌트 차량이 가성비와 편의성 면에서 훨씬 우수합니다. 원하는 시간과 장소로 쾌적하게 이동하세요.
+                    </p>
+                </div>
+
+                <!-- Weather -->
+                <div class="bg-slate-800/80 p-5 rounded-xl border border-slate-700">
+                    <div class="w-10 h-10 bg-teal-500/20 text-teal-400 rounded-lg flex items-center justify-center font-bold mb-3 text-lg">
+                        <i class="fa-solid fa-cloud-sun"></i>
+                    </div>
+                    <h3 class="font-bold text-base mb-2">2월 날씨 & 복장</h3>
+                    <p class="text-xs text-slate-300 leading-relaxed">
+                        강수량이 거의 없는 최고의 건기입니다 (평균 28~31°C). 다만 햇볕이 강하므로 챙이 넓은 모자, 양산, 아기와 어르신을 위한 얇은 에어컨용 가디건/블랭킷을 지참하세요.
+                    </p>
+                </div>
+
+                <!-- Accommodation -->
+                <div class="bg-slate-800/80 p-5 rounded-xl border border-slate-700">
+                    <div class="w-10 h-10 bg-indigo-500/20 text-indigo-400 rounded-lg flex items-center justify-center font-bold mb-3 text-lg">
+                        <i class="fa-solid fa-house-chimney-window"></i>
+                    </div>
+                    <h3 class="font-bold text-base mb-2">숙소 추천 (풀빌라)</h3>
+                    <p class="text-xs text-slate-300 leading-relaxed">
+                        3세대가 함께 거실을 공유하고 전용 수영장을 이용할 수 있는 **3베드룸 풀빌라** (북부 빈펄 단지 또는 중부 소나시 단지)를 적극 권장합니다.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Checklist Section -->
+        <section class="mt-8 bg-white rounded-2xl p-6 shadow-sm border border-slate-200">
+            <h2 class="text-lg font-bold text-slate-900 mb-4 flex items-center gap-2">
+                <i class="fa-solid fa-square-check text-emerald-600"></i> 가족 여행 필수 준비물 체크리스트
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-3 text-sm">
+                <label class="flex items-center gap-3 p-3 bg-slate-50 rounded-xl cursor-pointer hover:bg-slate-100 transition-colors">
+                    <input type="checkbox" class="w-4 h-4 accent-teal-600 rounded">
+                    <span class="text-xs font-medium text-slate-700">휴대용 유모차 (접이식) & 모기 퇴치제</span>
+                </label>
+                <label class="flex items-center gap-3 p-3 bg-slate-50 rounded-xl cursor-pointer hover:bg-slate-100 transition-colors">
+                    <input type="checkbox" class="w-4 h-4 accent-teal-600 rounded">
+                    <span class="text-xs font-medium text-slate-700">사파리 VIP 버기 투어 사전 예약</span>
+                </label>
+                <label class="flex items-center gap-3 p-3 bg-slate-50 rounded-xl cursor-pointer hover:bg-slate-100 transition-colors">
+                    <input type="checkbox" class="w-4 h-4 accent-teal-600 rounded">
+                    <span class="text-xs font-medium text-slate-700">기사 포함 단독 차량(렌트카) 예약</span>
+                </label>
+                <label class="flex items-center gap-3 p-3 bg-slate-50 rounded-xl cursor-pointer hover:bg-slate-100 transition-colors">
+                    <input type="checkbox" class="w-4 h-4 accent-teal-600 rounded">
+                    <span class="text-xs font-medium text-slate-700">입국/출국 날 모닝&굿바이 마사지 예약</span>
+                </label>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="max-w-4xl mx-auto px-6 mt-12 text-center text-xs text-slate-400">
+        <p>푸꾸옥 3세대 가족 여행을 위한 맞춤형 가이드북 • 즐겁고 안전한 여행 되세요!</p>
+    </footer>
+
+    <!-- Tab Switching Script -->
+    <script>
+        function filterDay(dayId) {
+            const cards = document.querySelectorAll('.day-card');
+            const buttons = document.querySelectorAll('.tab-btn');
+
+            // Reset buttons style
+            buttons.forEach(btn => {
+                btn.classList.remove('bg-teal-600', 'text-white', 'shadow-md');
+                btn.classList.add('bg-white', 'text-slate-600', 'border', 'border-slate-200');
+            });
+
+            // Highlight active button
+            const activeBtn = document.getElementById(`btn-${dayId}`);
+            if (activeBtn) {
+                activeBtn.classList.remove('bg-white', 'text-slate-600', 'border', 'border-slate-200');
+                activeBtn.classList.add('bg-teal-600', 'text-white', 'shadow-md');
+            }
+
+            // Show / Hide Day Cards
+            cards.forEach(card => {
+                if (dayId === 'all') {
+                    card.style.display = 'block';
+                } else {
+                    if (card.id === dayId) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                }
+            });
+        }
+    </script>
+</body>
+</html>
